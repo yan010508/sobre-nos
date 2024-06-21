@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 #FF0077;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+}
+
+.btn-expandir > i{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul{
+  
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.ativo{
+    background-color: #FF0077;
+}
+
+ul li.item-menu:hover{
+    background: #FF0077;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .top-row, .bottom-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .top-row > div, .bottom-row > div {
+    background-color: #FF0077;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 190px;
+    height: 190px;
+    border-radius: 15px; 
+  }
+
+  h2 {
+    margin-top: 0;
+    color: white;
+    text-align: center;
+  }
+  #nav.active #menu {
+    height: calc(100vh - 70px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  #menu a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::after,
+  #hamburger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav.active #hamburger {
+    border-top-color: transparent;
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg);
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  a {
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    font-family: -system-ui, sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0.25rem 0.5rem;
+    margin: 0.25rem;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    background: #FF0077;
+  }
+  
+  a:focus {
+    box-shadow: 0 0 0 2px #337ab7;
+  }
+  
+  a:active {
+    background: #FF0077;
+    box-shadow: 0 0 0 2px #337ab7;
+  }
+
+  
+a.fill-div {
+ text-align: center;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
+.Audio-livro {
+  width: 200px;
+  height: 200px;
+}
+
+.cont {
+  height: 200px;
+  width: 200px;
+}
+
+.nota {
+  height: 200px;
+  width: 200px;
+}
+
+
+.option {
+  height: 250px;
+  width: 250px;
+  margin: 50px 100px;
+  border-radius: 15px;
+  background: #FF0077;
+}
+.title {
+  text-align: center;
+  padding: 30px; 
+  font-size: 50px;
+}
+
+h3 {
+  padding: 30px 18%;
+  font-size: 40px;
+}
+
+p {
+  padding: 30px 18%;
+  font-size: 20px;
+}
+
+li {
+  padding: 5px 18%;
+  font-size: 20px;
+}
+
+.grupao {
+  position: absolute;
+  height: 250px;
+  width: 320px;
+  margin: 0 0 0 46%;
+  padding-top: -20%;
+}
+
+.uuu {
+  padding: 30px 18% 7px;
+}
